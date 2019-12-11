@@ -1,0 +1,80 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="entete">
+            <p>Tennis Club de Mégrine</p>
+            <img class="logo" src="logo.png" width="80"></br>
+        </div>
+        <div class="page">
+            
+            <div class="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="actualité.php">Actualités</a></li>
+                    <li><a href="membres.php">Membres</a></li>
+                    <li><a href="admins.php">Admins</a></li>
+                    <li><a href="AjouterProd.html">Produits</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <form method="POST" action="ajouter.php">
+                    <table>
+                        <caption>Ajouter membre</caption>
+                        <tr>
+                            <td>CIN</td>
+                            <td><input type="number" name="cin"></td>
+                        </tr>
+                        <tr>
+                            <td>Nom</td>
+                            <td><input type="text" name="nom"></td>
+                        </tr>
+                        <tr>
+                            <td>Prenom</td>
+                            <td><input type="text" name="prenom"></td>
+                        </tr>
+                        <tr>
+                            <td>tel</td>
+                            <td><input type="number" name="tel"></td>
+                        </tr>
+                        <tr>
+                            <td>age</td>
+                            <td><input type="text" name="age"></td>
+                        </tr>
+                        <tr>
+                            <td>inscription</td>
+                            <td><input type="date" name="inscription"></td>
+                        </tr>
+                        <tr>
+                            <td>abonnement</td>
+                            <td><input type="date" name="abonnement"></td>
+                        </tr>
+                        <tr>
+                            <td>email</td>
+                            <td><input type="text" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>mot de pass</td>
+                            <td><input type="password" name="mdp"></td>
+                        </tr>
+                        <tr>
+                            <td>paiement</td>
+                            <td><input type="text" name="paiement"></td>
+                        </tr>
+                        <tr>
+                            <td>role</td>
+                            <td><input type="text" name="role" value="abonne" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="ajouter" value="ajouter"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>

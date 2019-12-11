@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript" src="esprit.js"></script>
+</head>
+
+<body>
+    <div class="entete">
+        <p>Tennis Club de Mégrine</p>
+        <img class="logo" src="logo.png" width="80"></br>
+    </div>
+    <div class="page">
+
+        <div class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="actualité.php">Actualités</a></li>
+                <li><a href="membres.php">Membres</a></li>
+                <li><a href="admins.php">Admins</a></li>
+                <li><a href="AjouterProd.html">Produits</a></li>
+            </ul>
+        </div>
+        <div class="content">
+
+                <tr>
+                    <h3 class="page-header"><i class="fa fa-laptop"></i> Gestion de Produit</h3>
+                </tr>
+
+                <form name="f1" method="GET" action="AjouterProd.php">
+                    <table id="example1" class="table table-striped">
+
+                        <tr>
+                            <td>Ref Produit</td>
+                            <td><input type="number" name="idP"></td>
+                        </tr>
+                        <tr>
+                            <td>Nom Produit</td>
+                            <td><input type="text" name="nomP"></td>
+                        </tr>
+                        <tr>
+                            <td>Image Produit</td>
+                            <td><input type="file" name="imageP"></td>
+                        </tr>
+                        <tr>
+                            <td>Description Produit</td>
+                            <td><input type="text" name="descriP"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button> 
+                                <a name="ajouter" value="ajouter"> Envoyé</button>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <ul class="sub">
+                            <a class="" href="AjouterProd.html">Ajouter Produit</a>        
+                            <a class="" href="AfficherProd1.php">Afficher Produit</a>
+                            <a class="" href="recherche1.php">Chercher Produit</a>
+                            <a class="" href="AfficherTri1.php">Tri Produit Ascendant</a>
+                           <a class="" href="AfficherTri2.php">Tri Produit Descendant </a>
+                          <a class="" href="stat1.php">Statistique Produit</a>
+                        </ul>
+                    </form>
+                    </div>
+                    
+                    
+        </div>
+    </div>
+
+</body>
+
+</html>
